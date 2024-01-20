@@ -1,6 +1,6 @@
 # HoverChair - The Ultimate Seating Experience
 
-![HoverChair](./HoverChair-Landingpage/Project-image.png)
+![HoverChair](./assets/Project-image.png)
 
 
 Welcome to the HoverChair Landing Page project, crafted with the assistance of AI! This repository includes a straightforward HTML and CSS file designed to introduce you to the HoverChair - The Ultimate Seating Experience.

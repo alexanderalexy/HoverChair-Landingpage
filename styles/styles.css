@@ -12,7 +12,7 @@ body {
 
 
 .hero {
-    background: url('../background-image.jpg') center/cover no-repeat; /* Set the background image */
+    background: url('../assets/background-image.jpg') center/cover no-repeat; /* Set the background image */
     text-align: center; /* Center-align text content */
     height: 100vh; /* Set the background image height */
     display: flex; /* Use flexbox for centering */
