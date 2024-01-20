@@ -1,0 +1,145 @@
+
+
+/* styles.css */
+
+/* Apply styles to the hero section */
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero {
+    background: url('../background-image.jpg') center/cover no-repeat; /* Set the background image */
+    text-align: center; /* Center-align text content */
+    height: 100vh; /* Set the background image height */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center vertically */
+    padding: 40px; /* Add padding for spacing */
+    position: relative; /* Set the position to relative to allow overlay */
+    z-index: 0; /* Place the overlay behind the content */
+   
+}
+
+/* Add a white overlay to the background image */
+.hero::before {
+    content: ""; /* Create a pseudo-element for the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(219, 219, 219, 0.573); /* White color with transparency (adjust opacity as needed) */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+/* Style the main heading with a light text-shadow */
+.main-heading {
+    font-size: 8rem; /* Set the font size for the main heading */
+    line-height: 1;
+    margin: 0 auto;
+    color: #333; /* Text color - Subdued hue */
+    font-weight: 300;
+    letter-spacing: -4px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Add a light text-shadow */
+    max-width: 1300px; /* Set the maximum width for the description */
+}
+
+/* Style the sub-heading with a light text-shadow */
+.sub-heading {
+    font-size: 1.75rem; /* Set the font size for the sub-heading */
+    color: #292929; /* Text color - Neutral color */
+    font-weight: 600;
+    margin: 16px auto;
+    text-shadow: 1px 1px 2px rgba(72, 72, 72, 0.07); /* Add a light text-shadow */
+}
+
+/* Style the description paragraph */
+.description {
+    font-size: 1.25rem; /* Set the font size for the description */
+    margin-top: 20px; /* Add margin spacing */
+    color: #292929; /* Text color - Neutral color */
+    text-shadow: 1px 1px 2px rgba(72, 72, 72, 0.07); /* Add a light text-shadow */
+    max-width: 700px; /* Set the maximum width for the description */
+    margin: 0 auto; /* Center the text horizontally */
+    
+}
+
+/* Style the call to action (CTA) button */
+.cta-button {
+    display: inline-block; /* Make it a block-level element */
+    padding: 10px 20px; /* Add padding to the button */
+    background-color: #007BFF; /* Button background color - Subdued blue */
+    color: #fff; /* Text color - White */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Add rounded corners to the button */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    font-size: 1.25rem;
+    max-width: 200px; /* Set the maximum width for the button */
+    margin: 40px auto 0px auto; /* Center the button horizontally */
+    position: relative; /* Ensure button remains clickable */
+    z-index: 1; /* Place the button above the overlay */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
+}
+
+
+/* Hover state for the CTA button */
+.cta-button:hover {
+    background-color: #0056b3; /* Button background color on hover - Darker blue */
+}
+
+@media (max-width: 1135px) {
+    .main-heading {
+        font-size: 5rem; /* Smaller font size for tablet */
+        width: 90vw
+    }
+
+    .sub-heading {
+        font-size: 1.5rem; /* Adjusted font size for tablet */
+        width: 80vw;
+        
+    }
+
+    .description {
+        font-size: 1rem; /* Smaller font size for tablet */
+        width: 60vw;
+    }
+
+    .cta-button {
+        font-size: 1rem; /* Smaller font size for tablet */
+        padding: 8px 16px; /* Slightly smaller padding */
+        
+    }
+}
+
+@media (max-width: 576px) {
+    .main-heading {
+        font-size: 3.5rem; /* Smaller font size for mobile */
+        letter-spacing: -2px; /* Adjust letter spacing for smaller screen */
+        width: 80vw;
+    }   
+
+    .sub-heading {
+        font-size: 1.25rem; /* Adjusted font size for mobile */
+        width: 60vw;
+    }
+
+    .description {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+        padding: 0 20px; /* Add padding for better readability */
+        width: 50vw;
+        
+    }
+
+    .cta-button {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+        padding: 6px 12px; /* Smaller padding */
+        max-width: 100%; /* Full width on small screens */
+    }
+}
+
+
