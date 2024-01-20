@@ -13,7 +13,7 @@ HoverChair offers a unique and comfortable seating experience inspired by hoverc
 
 ## Preview
 
-You can experience the HoverChair Landing Page by clicking [here](https://www.link.com/).
+You can experience the HoverChair Landing Page by clicking [here](https://alexanderalexy.github.io/HoverChair-Landingpage/).
 
 ## Usage
 
