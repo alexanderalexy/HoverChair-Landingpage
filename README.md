@@ -10,9 +10,17 @@ HoverChair offers a unique and comfortable seating experience inspired by hoverc
 
 ## Preview
 
-You can experience the HoverChair Landing Page by clicking [here](https://www.ikea.com/).
+You can experience the HoverChair Landing Page by clicking [here](https://www.link.com/).
 
 ## Usage
 
 To utilize this HTML and CSS code, simply copy the contents of the provided files and paste them into your own HTML document. You have the flexibility to customize the content, styles, and links to align with your specific requirements.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+Alexander Alexy
 
